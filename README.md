@@ -7,6 +7,6 @@
 ### Department
 
 Attributes:
- department_name (string) - Name of the department
- employee_count (number) - The number of employees in the department.
+ department_name (string) - Name of the department <br>
+ employee_count (number) - The number of employees in the department. <br>
  annual_budget (number) - The annual budget allocated to the department.
