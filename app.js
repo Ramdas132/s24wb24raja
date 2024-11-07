@@ -6,7 +6,9 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var departmentRouter=require('./routes/department');
+var departmentRouter = require('./routes/department');
+var gridRouter = require('./routes/grid');
+var randomRouter = require('./routes/pick');
 var app = express();
 
 // view engine setup
@@ -19,6 +21,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/department',departmentRouter);
+app.use('/grid',gridRouter);
+app.use('/pick',randomRouter);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
